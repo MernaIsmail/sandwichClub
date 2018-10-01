@@ -19,7 +19,7 @@ public class JsonUtils {
             String mainName = name.getString("mainName");
             JSONArray alsoKnownAs = name.getJSONArray("alsoKnownAs");
             List<String> alsoKnownAsList = new ArrayList<>();
-            for (int i = 0; i > alsoKnownAs.length(); i++) {
+            for (int i = 0; i < alsoKnownAs.length(); i++) {
                 alsoKnownAsList.add(alsoKnownAs.getString(i));
             }
 
@@ -28,7 +28,7 @@ public class JsonUtils {
             String image = sandwich.getString("image");
             JSONArray ingredients = sandwich.getJSONArray("ingredients");
             List<String> ingredientsList = new ArrayList<>();
-            for (int i = 0; i > ingredients.length(); i++) {
+            for (int i = 0; i < ingredients.length(); i++) {
                 ingredientsList.add(ingredients.getString(i));
             }
 
